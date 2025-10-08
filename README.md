@@ -1,14 +1,13 @@
-# AI-chatbot
-hey! I am making a new chatbot for all AI users to do his work very easily with AI chatbot
-[AI Chatbot 2.o.html](https://github.com/user-attachments/files/22765000/AI.Chatbot.2.o.html)
-<!DOCTYPE html>
-<!-- saved from url=(0070)file:///C:/Users/sonuk/OneDrive/Desktop/projects.web/AI%20chatbot.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+[AI chatbot.html](https://github.com/user-attachments/files/22766218/AI.chatbot.html)
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>AI Chatbot — Single File</title>
     <!-- Tailwind CDN (works in single-file demos) -->
-    <script src="./AI Chatbot 2.o_files/saved_resource"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* minor extras */
         
@@ -36,7 +35,7 @@ hey! I am making a new chatbot for all AI users to do his work very easily with 
             white-space: pre-wrap
         }
     </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.m-0{margin:0px}.mx-auto{margin-left:auto;margin-right:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.flex{display:flex}.hidden{display:none}.h-\[70vh\]{height:70vh}.h-full{height:100%}.w-72{width:18rem}.w-80{width:20rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-\[80\%\]{max-width:80%}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.resize-none{resize:none}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.overflow-auto{overflow:auto}.rounded{border-radius:0.25rem}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-sky-600{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}</style></head>
+</head>
 
 <body class="bg-slate-50">
     <div id="app" class="h-full flex flex-col max-w-4xl mx-auto p-4">
@@ -47,7 +46,7 @@ hey! I am making a new chatbot for all AI users to do his work very easily with 
             </div>
             <div class="w-80">
                 <label class="text-xs text-slate-600">OpenAI API key (kept in session only)</label>
-                <input id="apiKey" type="password" placeholder="sk-..." class="w-full px-3 py-2 rounded-md border">
+                <input id="apiKey" type="password" placeholder="sk-..." class="w-full px-3 py-2 rounded-md border" />
                 <div class="flex gap-2 mt-2 text-xs">
                     <button id="saveKey" class="px-3 py-1 bg-sky-600 text-white rounded">Save key</button>
                     <button id="clearKey" class="px-3 py-1 bg-white border rounded">Clear</button>
@@ -73,7 +72,7 @@ hey! I am making a new chatbot for all AI users to do his work very easily with 
 
                 <div class="mb-2">
                     <label class="text-xs text-slate-600">Temperature</label>
-                    <input id="temp" type="range" min="0" max="1" step="0.1" value="0.2">
+                    <input id="temp" type="range" min="0" max="1" step="0.1" value="0.2" />
                 </div>
 
                 <div class="flex gap-2 mt-3">
@@ -85,44 +84,14 @@ hey! I am making a new chatbot for all AI users to do his work very easily with 
 
                 <div>
                     <h4 class="text-xs text-slate-600 mb-2">Saved conversations</h4>
-                    <div id="savedList" class="flex flex-col gap-2 text-sm"><div class="text-slate-400 text-xs">No saved conversations</div></div>
+                    <div id="savedList" class="flex flex-col gap-2 text-sm"></div>
                 </div>
             </section>
 
             <section class="flex-1 flex flex-col h-[70vh]">
-                <div id="chat" class="flex-1 bg-white p-4 rounded-lg shadow-sm overflow-auto chat-scroll"><div class="mb-4">
-          <div class="flex justify-end">
-            <div class="max-w-[80%] p-3 rounded-xl user-bubble">
-              <div class="text-sm font-medium">
-                <pre class="text-sm m-0">hay</pre>
-              </div>
-            </div>
-          </div>
-        </div><div class="mb-4">
-          <div class="flex justify-start">
-            <div class="max-w-[80%] p-3 rounded-xl ai-bubble">
-              <div class="text-sm text-slate-800">
-                Hello! How can I assist you today?
-              </div>
-            </div>
-          </div>
-        </div><div class="mb-4">
-          <div class="flex justify-end">
-            <div class="max-w-[80%] p-3 rounded-xl user-bubble">
-              <div class="text-sm font-medium">
-                <pre class="text-sm m-0">prime minister of india</pre>
-              </div>
-            </div>
-          </div>
-        </div><div class="mb-4">
-          <div class="flex justify-start">
-            <div class="max-w-[80%] p-3 rounded-xl ai-bubble">
-              <div class="text-sm text-slate-800">
-                As of my last knowledge update in October 2023, the Prime Minister of India is Narendra Modi. He has been in office since May 26, 2014, after his party, the Bharatiya Janata Party (BJP), won a majority in the general elections. If you need more specific information or updates, please let me know!
-              </div>
-            </div>
-          </div>
-        </div></div>
+                <div id="chat" class="flex-1 bg-white p-4 rounded-lg shadow-sm overflow-auto chat-scroll">
+                    <!-- messages -->
+                </div>
 
                 <form id="composer" class="mt-3 bg-white p-3 rounded-lg shadow-sm flex gap-3 items-end">
                     <textarea id="prompt" rows="2" placeholder="Type your message... (Shift+Enter for newline)" class="flex-1 p-2 border rounded resize-none"></textarea>
@@ -135,7 +104,7 @@ hey! I am making a new chatbot for all AI users to do his work very easily with 
                 <div class="mt-2 flex gap-2 text-xs">
                     <button id="copyAll" class="px-3 py-1 bg-white border rounded">Copy all</button>
                     <button id="clearAll" class="px-3 py-1 bg-white border rounded">Clear history</button>
-                    <div class="flex-1 text-right text-slate-500" id="status">Done</div>
+                    <div class="flex-1 text-right text-slate-500" id="status">Ready</div>
                 </div>
             </section>
         </main>
@@ -475,6 +444,6 @@ hey! I am making a new chatbot for all AI users to do his work very easily with 
     // render with html content support
     // patch renderChat to prefer content_html if present (already used)
     </script>
+</body>
 
-
-</body></html>
+</html>
