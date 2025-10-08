@@ -1,2 +1,480 @@
 # AI-chatbot
 hey! I am making a new chatbot for all AI users to do his work very easily with AI chatbot
+[AI Chatbot 2.o.html](https://github.com/user-attachments/files/22765000/AI.Chatbot.2.o.html)
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/sonuk/OneDrive/Desktop/projects.web/AI%20chatbot.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AI Chatbot — Single File</title>
+    <!-- Tailwind CDN (works in single-file demos) -->
+    <script src="./AI Chatbot 2.o_files/saved_resource"></script>
+    <style>
+        /* minor extras */
+        
+        html,
+        body,
+        #app {
+            height: 100%
+        }
+        
+        .chat-scroll {
+            overscroll-behavior: contain;
+        }
+        
+        .user-bubble {
+            background: linear-gradient(180deg, #2563eb, #1e40af);
+            color: white;
+        }
+        
+        .ai-bubble {
+            background: #f3f4f6;
+            color: #0f172a;
+        }
+        
+        pre {
+            white-space: pre-wrap
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.m-0{margin:0px}.mx-auto{margin-left:auto;margin-right:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.flex{display:flex}.hidden{display:none}.h-\[70vh\]{height:70vh}.h-full{height:100%}.w-72{width:18rem}.w-80{width:20rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-\[80\%\]{max-width:80%}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.resize-none{resize:none}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.overflow-auto{overflow:auto}.rounded{border-radius:0.25rem}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-sky-600{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}</style></head>
+
+<body class="bg-slate-50">
+    <div id="app" class="h-full flex flex-col max-w-4xl mx-auto p-4">
+        <header class="flex items-center gap-4 mb-4">
+            <div class="flex-1">
+                <h1 class="text-2xl font-semibold">AI Chatbot — Single File</h1>
+                <p class="text-sm text-slate-600">Paste your OpenAI API key below, then ask anything. (Or point to your server proxy.)</p>
+            </div>
+            <div class="w-80">
+                <label class="text-xs text-slate-600">OpenAI API key (kept in session only)</label>
+                <input id="apiKey" type="password" placeholder="sk-..." class="w-full px-3 py-2 rounded-md border">
+                <div class="flex gap-2 mt-2 text-xs">
+                    <button id="saveKey" class="px-3 py-1 bg-sky-600 text-white rounded">Save key</button>
+                    <button id="clearKey" class="px-3 py-1 bg-white border rounded">Clear</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 flex gap-4">
+            <section class="w-72 bg-white p-3 rounded-lg shadow-sm h-[70vh] overflow-auto">
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-sm font-medium">Controls</h3>
+                    <div class="text-xs text-slate-500">Saved chats</div>
+                </div>
+
+                <div class="mb-2">
+                    <label class="text-xs text-slate-600">Model</label>
+                    <select id="modelSelect" class="w-full mt-1 p-2 rounded border">
+            <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+            <option value="gpt-4o">gpt-4o</option>
+            <option value="gpt-4o-mini">gpt-4o-mini</option>
+          </select>
+                </div>
+
+                <div class="mb-2">
+                    <label class="text-xs text-slate-600">Temperature</label>
+                    <input id="temp" type="range" min="0" max="1" step="0.1" value="0.2">
+                </div>
+
+                <div class="flex gap-2 mt-3">
+                    <button id="newChat" class="flex-1 px-3 py-2 bg-white border rounded">New chat</button>
+                    <button id="exportChat" class="flex-1 px-3 py-2 bg-emerald-600 text-white rounded">Export</button>
+                </div>
+
+                <hr class="my-3">
+
+                <div>
+                    <h4 class="text-xs text-slate-600 mb-2">Saved conversations</h4>
+                    <div id="savedList" class="flex flex-col gap-2 text-sm"><div class="text-slate-400 text-xs">No saved conversations</div></div>
+                </div>
+            </section>
+
+            <section class="flex-1 flex flex-col h-[70vh]">
+                <div id="chat" class="flex-1 bg-white p-4 rounded-lg shadow-sm overflow-auto chat-scroll"><div class="mb-4">
+          <div class="flex justify-end">
+            <div class="max-w-[80%] p-3 rounded-xl user-bubble">
+              <div class="text-sm font-medium">
+                <pre class="text-sm m-0">hay</pre>
+              </div>
+            </div>
+          </div>
+        </div><div class="mb-4">
+          <div class="flex justify-start">
+            <div class="max-w-[80%] p-3 rounded-xl ai-bubble">
+              <div class="text-sm text-slate-800">
+                Hello! How can I assist you today?
+              </div>
+            </div>
+          </div>
+        </div><div class="mb-4">
+          <div class="flex justify-end">
+            <div class="max-w-[80%] p-3 rounded-xl user-bubble">
+              <div class="text-sm font-medium">
+                <pre class="text-sm m-0">prime minister of india</pre>
+              </div>
+            </div>
+          </div>
+        </div><div class="mb-4">
+          <div class="flex justify-start">
+            <div class="max-w-[80%] p-3 rounded-xl ai-bubble">
+              <div class="text-sm text-slate-800">
+                As of my last knowledge update in October 2023, the Prime Minister of India is Narendra Modi. He has been in office since May 26, 2014, after his party, the Bharatiya Janata Party (BJP), won a majority in the general elections. If you need more specific information or updates, please let me know!
+              </div>
+            </div>
+          </div>
+        </div></div>
+
+                <form id="composer" class="mt-3 bg-white p-3 rounded-lg shadow-sm flex gap-3 items-end">
+                    <textarea id="prompt" rows="2" placeholder="Type your message... (Shift+Enter for newline)" class="flex-1 p-2 border rounded resize-none"></textarea>
+                    <div class="flex flex-col gap-2 shrink-0">
+                        <button id="sendBtn" class="px-4 py-2 bg-sky-600 text-white rounded">Send</button>
+                        <button id="stopBtn" type="button" class="px-4 py-2 bg-red-500 text-white rounded hidden">Stop</button>
+                    </div>
+                </form>
+
+                <div class="mt-2 flex gap-2 text-xs">
+                    <button id="copyAll" class="px-3 py-1 bg-white border rounded">Copy all</button>
+                    <button id="clearAll" class="px-3 py-1 bg-white border rounded">Clear history</button>
+                    <div class="flex-1 text-right text-slate-500" id="status">Done</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-4 text-xs text-slate-500">
+            Single-file demo • Keep key private • For production, run a server proxy (recommended).
+        </footer>
+    </div>
+
+    <script>
+        /* Single-file AI Chatbot
+                       - Uses OpenAI ChatCompletions endpoint with streaming
+                       - Stores chats in localStorage
+                       - IMPORTANT: The API key is used directly from sessionStorage if set.
+                    */
+
+        // === Utilities ===
+        const $ = id => document.getElementById(id);
+        const safeJson = (s) => {
+            try {
+                return JSON.parse(s)
+            } catch (e) {
+                return null
+            }
+        }
+
+        // State
+        let conversation = []; // array of {role: 'user'|'assistant'|'system', content}
+        let currentAbortController = null;
+
+        // init DOM refs
+        const chatEl = $('chat');
+        const promptEl = $('prompt');
+        const apiKeyInput = $('apiKey');
+        const statusEl = $('status');
+        const modelSelect = $('modelSelect');
+        const tempEl = $('temp');
+        const savedListEl = $('savedList');
+        const sendBtn = $('sendBtn');
+        const stopBtn = $('stopBtn');
+
+        // Load saved key from sessionStorage
+        apiKeyInput.value = sessionStorage.getItem('OPENAI_KEY') || '';
+
+        // Load saved conversation from localStorage
+        function loadSaved() {
+            const raw = localStorage.getItem('singlefile_chat');
+            const parsed = safeJson(raw);
+            if (parsed && parsed.conversation) {
+                conversation = parsed.conversation;
+            } else {
+                conversation = [{
+                    role: 'system',
+                    content: "You are a helpful assistant."
+                }];
+            }
+            renderChat();
+            // saved list (multiple conversations support)
+            const archive = safeJson(localStorage.getItem('singlefile_archive')) || [];
+            savedListEl.innerHTML = archive.length ? archive.map((c, i) => `
+        <div class="flex items-center justify-between gap-2">
+          <div class="truncate">${escapeHtml((c.title||'Chat') )}</div>
+          <div class="flex gap-1">
+            <button data-load="${i}" class="px-2 py-1 text-xs border rounded">Load</button>
+            <button data-del="${i}" class="px-2 py-1 text-xs border rounded">Delete</button>
+          </div>
+        </div>
+      `).join('') : '<div class="text-slate-400 text-xs">No saved conversations</div>';
+        }
+
+        function saveCurrent() {
+            localStorage.setItem('singlefile_chat', JSON.stringify({
+                conversation
+            }));
+        }
+
+        function escapeHtml(s) {
+            if (!s) return '';
+            return s.replace(/[&<>"']/g, c => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;'
+            })[c]);
+        }
+
+        // Render conversation
+        function renderChat() {
+            chatEl.innerHTML = '';
+            conversation.forEach((m, idx) => {
+                        if (m.role === 'system') return; // hide system
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'mb-4';
+                        wrapper.innerHTML = `
+          <div class="flex ${m.role==='user' ? 'justify-end' : 'justify-start'}">
+            <div class="max-w-[80%] p-3 rounded-xl ${m.role==='user' ? 'user-bubble' : 'ai-bubble'}">
+              <div class="text-sm ${m.role==='user' ? 'font-medium' : 'text-slate-800'}">
+                ${m.content_html ? m.content_html : `<pre class="text-sm m-0">${escapeHtml(m.content)}</pre>`}
+              </div>
+            </div>
+          </div>
+        `;
+        chatEl.appendChild(wrapper);
+      });
+      chatEl.scrollTop = chatEl.scrollHeight;
+      saveCurrent();
+    }
+
+    // Convert markdown-like links to HTML minimal (very lightweight)
+    function contentToHtml(text){
+      // Simple newline -> <br>, basic code block handling could be improved
+      const escaped = escapeHtml(text);
+      const withBreaks = escaped.replace(/\n/g,'<br>');
+      // convert links
+      return withBreaks.replace(/(https?:\/\/[^\s<]+)/g,'<a href="$1" target="_blank" class="underline">$1</a>');
+    }
+
+    // Send message
+    async function sendMessage(content) {
+      if (!content || !content.trim()) return;
+      // push user message
+      conversation.push({role:'user', content});
+      renderChat();
+      promptEl.value = '';
+      statusEl.textContent = 'Sending...';
+      const apiKey = sessionStorage.getItem('OPENAI_KEY');
+      if (!apiKey) {
+        statusEl.textContent = 'Missing API key. Paste it in the top-right and click Save key.';
+        return;
+      }
+
+      // Build messages (keep system)
+      const system = conversation.find(m=>m.role==='system');
+      const messages = [];
+      if (system) messages.push({role:'system', content: system.content});
+      conversation.filter(m=>m.role!=='system').forEach(m => messages.push({role:m.role, content:m.content}));
+
+      // create assistant placeholder
+      const aiPlaceholder = {role:'assistant', content: '', content_html: '<em>...</em>'};
+      conversation.push(aiPlaceholder);
+      renderChat();
+      statusEl.textContent = 'Waiting for AI...';
+      stopBtn.classList.remove('hidden');
+      sendBtn.disabled = true;
+
+      // Abort controller for stop button
+      currentAbortController = new AbortController();
+      const model = modelSelect.value;
+      const temperature = Number(tempEl.value);
+
+      try {
+        // Use Chat Completions streaming (text/event-stream)
+        // Endpoint: https://api.openai.com/v1/chat/completions
+        // Note: some models or accounts might not allow streaming; if so, change to non-streaming flow.
+        const resp = await fetch('https://api.openai.com/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Authorization': 'Bearer ' + apiKey,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            model,
+            messages,
+            temperature,
+            stream: true
+          }),
+          signal: currentAbortController.signal
+        });
+
+        if (!resp.ok) {
+          const errText = await resp.text();
+          throw new Error(`${resp.status} ${resp.statusText}: ${errText}`);
+        }
+
+        // streaming parser for text/event-stream
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder('utf-8');
+        let done = false;
+        let assistantText = '';
+
+        while (!done) {
+          const {value, done: doneReading} = await reader.read();
+          done = doneReading;
+          if (value) {
+            const chunk = decoder.decode(value, {stream: true});
+            // the stream sends lines like: data: {...}\n\n or data: [DONE]
+            const parts = chunk.split(/\n/).filter(Boolean);
+            for (const part of parts) {
+              // remove leading "data: "
+              const line = part.replace(/^data:\s*/, '');
+              if (line === '[DONE]') {
+                done = true;
+                break;
+              }
+              try {
+                const parsed = JSON.parse(line);
+                const delta = parsed.choices?.[0]?.delta;
+                if (delta?.content) {
+                  assistantText += delta.content;
+                  aiPlaceholder.content = assistantText;
+                  aiPlaceholder.content_html = contentToHtml(assistantText);
+                  renderChat();
+                }
+              } catch(e){
+                // ignore parse errors for partial lines
+              }
+            }
+          }
+        }
+
+        // finalize assistant content
+        aiPlaceholder.content = assistantText;
+        aiPlaceholder.content_html = contentToHtml(assistantText);
+        renderChat();
+        statusEl.textContent = 'Done';
+      } catch (err) {
+        if (err.name === 'AbortError') {
+          statusEl.textContent = 'Stopped by user';
+          // leave what was generated so far
+        } else {
+          statusEl.textContent = 'Error: ' + err.message;
+          // replace last assistant with error message
+          const last = conversation[conversation.length-1];
+          if (last && last.role === 'assistant') {
+            last.content = '⚠️ Error: ' + (err.message || 'unknown');
+            last.content_html = contentToHtml(last.content);
+            renderChat();
+          }
+        }
+      } finally {
+        currentAbortController = null;
+        stopBtn.classList.add('hidden');
+        sendBtn.disabled = false;
+      }
+    }
+
+    // UI wiring
+    $('saveKey').addEventListener('click', ()=> {
+      const val = apiKeyInput.value.trim();
+      if (!val) {
+        alert('Paste your OpenAI API key (sk-...)');
+        return;
+      }
+      sessionStorage.setItem('OPENAI_KEY', val);
+      alert('API key saved to sessionStorage (only this tab). For production use a server-side proxy.');
+    });
+
+    $('clearKey').addEventListener('click', ()=> {
+      sessionStorage.removeItem('OPENAI_KEY');
+      apiKeyInput.value = '';
+      alert('Key cleared from sessionStorage.');
+    });
+
+    $('newChat').addEventListener('click', ()=> {
+      if (!confirm('Start a new chat? Current conversation will be archived.')) return;
+      // archive current
+      const archive = JSON.parse(localStorage.getItem('singlefile_archive')||'[]');
+      const title = prompt('Title for archive (optional)', (conversation[1] && conversation[1].content.slice(0,60)) || 'Chat');
+      archive.unshift({title: title || 'Chat', conversation});
+      localStorage.setItem('singlefile_archive', JSON.stringify(archive.slice(0,30)));
+      // reset conversation
+      conversation = [{role:'system', content:'You are a helpful assistant.'}];
+      saveCurrent();
+      loadSaved();
+    });
+
+    $('exportChat').addEventListener('click', ()=> {
+      const data = conversation.filter(m=>m.role!=='system').map(m=>`${m.role.toUpperCase()}:\n${m.content}\n`).join('\n---\n');
+      const blob = new Blob([data], {type:'text/plain'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'chat.txt'; document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    });
+
+    // saved list events
+    savedListEl.addEventListener('click', (e)=>{
+      const loadIdx = e.target.getAttribute('data-load');
+      const delIdx = e.target.getAttribute('data-del');
+      const archive = JSON.parse(localStorage.getItem('singlefile_archive')||'[]');
+      if (loadIdx !== null) {
+        const item = archive[Number(loadIdx)];
+        if (item) {
+          conversation = item.conversation || [{role:'system', content:'You are a helpful assistant.'}];
+          saveCurrent();
+          loadSaved();
+        }
+      } else if (delIdx !== null) {
+        if (!confirm('Delete saved conversation?')) return;
+        archive.splice(Number(delIdx),1);
+        localStorage.setItem('singlefile_archive', JSON.stringify(archive));
+        loadSaved();
+      }
+    });
+
+    // send button / form
+    $('composer').addEventListener('submit', (e)=> {
+      e.preventDefault();
+      const text = promptEl.value;
+      sendMessage(text);
+    });
+
+    // stop streaming
+    $('stopBtn').addEventListener('click', ()=> {
+      if (currentAbortController) currentAbortController.abort();
+      stopBtn.classList.add('hidden');
+      sendBtn.disabled = false;
+    });
+
+    $('copyAll').addEventListener('click', ()=>{
+      const plain = conversation.filter(m=>m.role!=='system').map(m=>`${m.role.toUpperCase()}:\n${m.content}`).join('\n\n');
+      navigator.clipboard.writeText(plain).then(()=>alert('Copied to clipboard'));
+    });
+
+    $('clearAll').addEventListener('click', ()=>{
+      if (!confirm('Clear all chat history?')) return;
+      conversation = [{role:'system', content:'You are a helpful assistant.'}];
+      saveCurrent();
+      renderChat();
+    });
+
+    // keyboard: Shift+Enter newline handled by textarea; Enter sends
+    promptEl.addEventListener('keydown', (e)=>{
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        $('composer').dispatchEvent(new Event('submit'));
+      }
+    });
+
+    // initial load
+    loadSaved();
+
+    // small helper to load saved key into session (if user pastes and clicks Save)
+    window.addEventListener('beforeunload', ()=> saveCurrent());
+
+    // render with html content support
+    // patch renderChat to prefer content_html if present (already used)
+    </script>
+
+
+</body></html>
